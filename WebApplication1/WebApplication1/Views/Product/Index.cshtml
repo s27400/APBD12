@@ -1,0 +1,19 @@
+@model WebApplication1.ViewModel.ProductViewModel
+
+<h1>List Przedmiotów</h1>
+<span>Liczba przedmiotów: @Model.AmoutnOfProducts </span>
+<table class="table">
+    <tr>
+        <th>IdProduct</th>
+        <th>Name</th>
+        <th>Quality</th>
+    </tr>
+    @foreach (var pr in Model.Products)
+    {
+        <tr>
+            <td>@pr.IdProduct</td>
+            <td>@pr.Name</td>
+            <td>@pr.Quality</td>
+        </tr>
+    }
+</table>

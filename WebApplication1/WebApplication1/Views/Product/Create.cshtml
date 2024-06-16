@@ -1,0 +1,18 @@
+@model ProductDTO
+
+<h1>Formularz dodawania produktów </h1>
+<form method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+    </div>
+    
+    <div>
+        <label asp-for="Quality"></label>
+        <input asp-for="Quality"/>
+        <span asp-validation-for="Quality"></span>
+    </div>
+
+    <input type="submit" value="Dodaj"/>
+</form>
